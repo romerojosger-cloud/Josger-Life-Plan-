@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Life Plan</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="intro-screen">
+        <div class="intro-content">
+            <h2 class="intro-title">My Life Plan <br> (Josger romero)</h2>
+            <p class="intro-subtitle">Cargando memorias y destinos...</p>
+        </div>
+    </div>
+
+    <div class="background-overlay"></div>
+
+    <header class="main-header">
+        <h1 class="glitch-title">MY LIFE PLAN</h1>
+        
+        <div id="countdown-container">
+            <p class="system-status">Tiempo restante para abrir la cápsula</p>
+            <span id="timer">00d 00h 00m 00s</span>
+        </div>
+    </header>
+
+    <nav class="timeline-nav">
+        <a href="#bloque-raiz">El Origen</a>
+        <a href="#bloque-actual">El Presente</a>
+        <a href="#bloque-futuro">El Mañana</a>
+    </nav>
+
+    <main class="timeline-container">
+
+        <section id="bloque-raiz" class="timeline-block">
+            <div class="block-header">
+                <h2>Mis Primeros Pasos</h2>
+            </div>
+            <div class="block-content">
+                <div class="photo-frame">
+                    <img src="./foto2.jpg" alt="[Mi Infancia]">
+                    <div class="photo-placeholder">Cargando foto origen...</div>
+                </div>
+                <div class="text-frame">
+                    <p class="timestamp">Memorias de la infancia</p>
+                    <p>Aquí es donde el camino comenzó. Este espacio está reservado para recordar mis raíces, las primeras metas que me propuse de niño, los momentos compartidos con mi familia y esas pequeñas anécdotas que me moldearon.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="bloque-actual" class="timeline-block">
+            <div class="block-header">
+                <h2>Construyendo el Camino</h2>
+            </div>
+            <div class="block-content">
+                <div class="photo-frame">
+                    <img src="./foto.jpg" alt="[Mi Presente]">
+                    <div class="photo-placeholder">Cargando foto actual...</div>
+                </div>
+                <div class="text-frame">
+                    <p class="timestamp">Adolecencia</p>
+                    <p>Aquí ya crecí, tengo conciencia, paso la vida
+
+como alguien normal, con algunas preocupaciones pero nada mortal, que si se me quedaron algunas materias o que alguien quiere pelear conmigo, lo normal, la mejor etapa del humano. Mis proyectos en esta etapa fueron ser programador o unirme a las fuerzas armadas c.i.c.p.c. No tengo claro lo que pasará, solo lo sabe Dios, pero con ganas de ver el futuro que estoy creando Con muchas preguntas y proyectos en mente.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="bloque-futuro" class="timeline-block">
+            <div class="block-header">
+                <h2>Cartas al Futuro</h2>
+            </div>
+            <div class="write-container">
+                <p class="system-status">Deja un mensaje, una meta o una promesa para tu "yo" del futuro:</p>
+                <textarea id="capsula-texto" placeholder="Escribe aquí con total libertad..."></textarea>
+                
+                <div style="margin: 10px 0; display: flex; flex-direction: column; gap: 5px;">
+                    <label for="fecha-desbloqueo" style="font-size: 0.85rem; color: #aa8416;">🔓 Elige cuándo se podrá abrir esta carta:</label>
+                    <input type="date" id="fecha-desbloqueo" style="background: rgba(10,10,10,0.6); border: 1px solid #aa8416; color: #d4af37; padding: 10px; font-family: 'Montserrat', sans-serif; border-radius: 4px; outline: none;">
+                </div>
+
+                <button id="btn-guardar">Guardar en la Cápsula</button>
+                
+                <div id="historial-cartas" style="margin-top: 25px; border-top: 1px dashed #aa8416; padding-top: 15px;">
+                    <p class="system-status" style="margin-bottom: 10px;">🗄️ Archivos Encriptados en la Cápsula:</p>
+                    <div id="lista-mensajes" style="display: flex; flex-direction: column; gap: 15px;"></div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <div id="contenedor-cohete" class="rocket-overlay">
+        <div class="rocket-loader">
+            <div class="rocket-body">
+                <div class="rocket-window"></div>
+                <div class="rocket-fin fin-left"></div>
+                <div class="rocket-fin fin-right"></div>
+            </div>
+            <div class="rocket-fire"></div>
+        </div>
+        <p class="rocket-text">carta guardada despegue hacia el futuro</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
